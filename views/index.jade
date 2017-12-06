@@ -22,7 +22,7 @@ block content
       each val, uuid in values
         li.list-group-item(id=uuid)
           div(align="right" style="float:right")
-            button.btn.btn-danger.btn-xs(id="btn-" + uuid onClick="deleteItem(this.id)") Delete
+            button.btn.btn-info.btn-xs(id="btn-" + uuid onClick="deleteItem(this.id)") Delete
           div(align="left")= val
 
   div.modal.fade.modal-error(tabindex="-1" role="dialog" aria-labelledby="errorModal" id="errorModal")
