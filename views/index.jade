@@ -12,12 +12,12 @@ block content
   form.form-inline(align="center" id="createForm" method="post" action="/values")
     div.form-group
       input.form-control(type="text" name="value" id="value" placeholder="Value" maxlength=32)
-      button.btn.btn-success(type="submit" id="create") Submit
+      button.btn.btn-warning(type="submit" id="create") Submit
 
   br
 
   div(align="left")
-    ul.list-group(id="list" style="width:600px")
+    ul.list-group(id="list" style="width:200px")
       li.list-group-item.active Values
       each val, uuid in values
         li.list-group-item(id=uuid)
